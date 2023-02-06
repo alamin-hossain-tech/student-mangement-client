@@ -67,7 +67,7 @@ const ManageStudent = () => {
   } = useQuery({
     queryKey: ["students"],
     queryFn: () =>
-      fetch("https://student-server.onrender.com/students").then((res) =>
+      fetch("https://student-brown.vercel.app/students").then((res) =>
         res.json()
       ),
   });
@@ -77,7 +77,7 @@ const ManageStudent = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`https://student-server.onrender.com/delete/${id}`, {
+    fetch(`https://student-brown.vercel.app/delete/${id}`, {
       method: "POST",
       headers: {
         "content-type": "aplication/json",

@@ -59,7 +59,7 @@ const EditStudent = () => {
               pincode: data.pincode,
               profile_pic: imageData.data.url,
             };
-            fetch(`https://student-server.onrender.com/edit/${loadData?._id}`, {
+            fetch(`https://student-brown.vercel.app/edit/${loadData?._id}`, {
               method: "PUT",
               headers: {
                 "content-type": "application/json",
@@ -93,7 +93,7 @@ const EditStudent = () => {
         pincode: data.pincode,
         profile_pic: loadData.profile_pic,
       };
-      fetch(`https://student-server.onrender.com/edit/${loadData?._id}`, {
+      fetch(`https://student-brown.vercel.app/edit/${loadData?._id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

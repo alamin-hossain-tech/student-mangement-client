@@ -56,7 +56,7 @@ const AddStudent = () => {
               profile_pic: imageData.data.url,
               published_time: new Date(),
             };
-            fetch("https://student-server.onrender.com/add-student", {
+            fetch("https://student-brown.vercel.app/add-student", {
               method: "POST",
               headers: {
                 "content-type": "application/json",
@@ -92,7 +92,7 @@ const AddStudent = () => {
         profile_pic: "",
         published_time: new Date(),
       };
-      fetch("https://student-server.onrender.com/add-student", {
+      fetch("https://student-brown.vercel.app/add-student", {
         method: "POST",
         headers: {
           "content-type": "application/json",

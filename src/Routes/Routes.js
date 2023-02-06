@@ -23,13 +23,13 @@ export const routes = createBrowserRouter([
         path: "view/:id",
         element: <ViewDetail></ViewDetail>,
         loader: ({ params }) =>
-          fetch(`https://student-server.onrender.com/view/${params.id}`),
+          fetch(`https://student-brown.vercel.app/view/${params.id}`),
       },
       {
         path: "edit/:id",
         element: <EditStudent></EditStudent>,
         loader: ({ params }) =>
-          fetch(`https://student-server.onrender.com/view/${params.id}`),
+          fetch(`https://student-brown.vercel.app/view/${params.id}`),
       },
     ],
   },
